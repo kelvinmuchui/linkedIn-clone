@@ -30,7 +30,7 @@ const Header= (props) => {
                 </Search>
                 <Nav>
           <NavListWrap>
-            <NavList className={splitLocation[1] === "" ? "active" : ""}>
+            <NavList className={splitLocation[1] === "home" ? "active" : ""}>
               <a>
                 <img src="/images/nav-home.svg" alt="" />
                 <span>Home</span>
@@ -44,7 +44,7 @@ const Header= (props) => {
               </a>
             </NavList>
 
-            <NavList>
+            <NavList className={splitLocation[1] === "jobs" ? "active" : ""}>
               <a href = "/jobs">
                 <img src="/images/nav-jobs.svg" alt="" />
                 <span>Jobs</span>
